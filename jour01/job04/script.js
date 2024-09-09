@@ -1,5 +1,5 @@
-function bisextile(année) {
-    if ((année % 4 === 0 && année % 100 !== 0) || (année % 400 === 0)) {
+function bisextile(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
         return true;
     } else {
         return false;
