@@ -1,0 +1,14 @@
+/* Initial default styling */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Konami code styling */
+.konami-active {
+    background-color: #0062FF;
+    color: white;
+}
