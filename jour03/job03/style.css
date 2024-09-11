@@ -10,7 +10,17 @@ body {
     gap: 5px;
     margin: 20px auto;
     width: 315px;
+    height: 315px;
     position: relative;
+}
+
+.tile {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: absolute;
+    transition: top 0.3s, left 0.3s;
 }
 
 .title {

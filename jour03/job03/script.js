@@ -24,9 +24,9 @@ $(document).ready(function () {
                     const tileNumber = tileNumbers.shift();
                     const tile = $('<div>')
                         .addClass('title')
-                        .text(tileNumber)
                         .data('row', row)
                         .data('col', col)
+                        .css('background-image', `url('images/${tileNumber}.PNG')`) // Add the image
                         .click(moveTile);
 
                     $('#puzzleCntainer').append(tile);
