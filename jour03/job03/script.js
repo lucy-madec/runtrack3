@@ -24,9 +24,13 @@ $(document).ready(function () {
                     const tileNumber = tileNumbers.shift();
                     const tile = $('<div>')
                         .addClass('tile')
+                        .css({
+                            'background-image': `url('images/${tileNumber}.PNG')`,
+                            'grid-row': row + 1,
+                            'grid-column': col + 1
+                        })
                         .data('row', row)
                         .data('col', col)
-                        .css('background-image', `url('images/${tileNumber}.PNG')`) // Add the image
                         .click(moveTile);
 
                     $('#puzzleContainer').append(tile);
@@ -57,7 +61,10 @@ $(document).ready(function () {
             // Swap the tile with the empty tile
             $(this).data('row', emptyTile.row);
             $(this).data('col', emptyTile.col);
-            $(this).css({ top: emptyTile.row * 100 + 'px', left: emptyTile.col * 100 + 'px' });
+            $(this).css({ 
+                'grid-row' : emptyTile.row + 1,
+                'grid-column' : emptyTile.col + 1
+            });
 
             // Update the empty tile's position
             emptyTile.row = tileRow;
@@ -78,7 +85,7 @@ $(document).ready(function () {
         $('#puzzleContainer .tile').each(function (index) {
             const row = Math.floor(index / gridSize);
             const col = index % gridSize;
-            const tileNumber = parseInt($(this).text());
+            const tileNumber = parseInt($(this).css('background-image').match(/(\d)\.PNG/)[1]);
 
             // If any tile is out of place, the puzzle is not solved
             if (tileNumber !== row * gridSize + col + 1) {
