@@ -1,0 +1,22 @@
+#imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-wrapper {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+#resultMessage {
+    margin-top: 20px;
+    font-size: 20px;
+}
