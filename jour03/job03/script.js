@@ -23,13 +23,13 @@ $(document).ready(function () {
                 } else {
                     const tileNumber = tileNumbers.shift();
                     const tile = $('<div>')
-                        .addClass('title')
+                        .addClass('tile')
                         .data('row', row)
                         .data('col', col)
                         .css('background-image', `url('images/${tileNumber}.PNG')`) // Add the image
                         .click(moveTile);
 
-                    $('#puzzleCntainer').append(tile);
+                    $('#puzzleContainer').append(tile);
                     tiles.push(tile);
                 }
             }
