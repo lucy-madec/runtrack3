@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Action when “Filter” button is clicked
     filterButton.addEventListener("click", function () {
-        const idInput = document.getElementById("id").value;
-        const nameInput = document.getElementById("name").value.toLowerCase();
         const typeInput = document.getElementById("type").value;
 
         // Fetch to retrieve the JSON file
@@ -14,10 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(data => {
                 // Filtering Pokémon by criteria
                 const filteredPokemons = data.filter(pokemon => {
-                    const matchesId = idInput ? pokemon.id == idInput : true;
-                    const matchesName = nameInput ? pokemon.name.toLowerCase().includes(nameInput) : true;
                     const matchestype = typeInput ? pokemon.type.includes(typeInput) : true;
-                    return matchesId && matchesName && matchestype;
+                    return matchestype;
                 });
 
                 // Results display

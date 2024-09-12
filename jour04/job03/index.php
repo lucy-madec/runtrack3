@@ -11,12 +11,6 @@
 <body>
     <h1>Filtrer les Pokémon</h1>
     <form id="filterForm">
-        <label for="id">ID :</label>
-        <input type="text" id="id" name="id"><br><br>
-
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="name"><br><br>
-
         <label for="type">Type :</label>
         <select name="type" id="type">
             <option value="">Tous</option>
