@@ -10,3 +10,9 @@ try {
 } catch (PDOException $e) {
     die('Erreur de connexion : ' . $e->getMessage());
 }
+
+if ($pdo) {
+    echo "Connexion réussie.";
+} else {
+    echo "Erreur de connexion.";
+}

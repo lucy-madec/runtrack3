@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loginForm.addEventListener('submit', function (event) {
             // Prevent form submission for client-side validation
             event.preventDefault();
-            validateSignupForm();
+            validateLoginForm();
         });
     }
 });
