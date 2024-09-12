@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('Location: index.php');
         exit();
     } else {
-        // Handles connection errors
-        exit('Erreur de connexion');
+        // If authentication fails, displays an error message
+        echo 'Erreur de connexion. Veuillez vérifier vos identifiants.';
     }
 }
