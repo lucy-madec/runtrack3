@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Registration
     const signupForm = document.getElementById('signupForm');
     if (signupForm) {
-        signupForm.addEventListener('submit', function (event){
+        signupForm.addEventListener('submit', function (event) {
             // Prevent form submission for client-side validation
             event.preventDefault();
             validateSignupForm();
@@ -62,7 +62,7 @@ function validateSignupForm() {
     }
 }
 
-function validateLoginForm() { 
+function validateLoginForm() {
     const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value;
 
@@ -84,22 +84,22 @@ function validateLoginForm() {
     if (isValid) {
         document.getElementById('loginForm').submit();
     }
- }
- function validateEmail(email) { 
+}
+function validateEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
-  }
+}
 
-  function showError(elementId, message) { 
+function showError(elementId, message) {
     const element = document.getElementById(elementId);
     if (element) {
         element.style.color = 'red';
     }
-   }
+}
 
-   function clearErrors() {
-    const errors = document.querySelectorAll('span[id$="Error"');
+function clearErrors() {
+    const errors = document.querySelectorAll('span[id$="Error"]');
     errors.forEach(error => {
-        error.textContent = ';'
+        error.textContent = '';
     });
-   }
+}
