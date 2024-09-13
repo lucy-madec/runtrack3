@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 session_start();
 include('db.php');
 
@@ -22,7 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('Location: index.php');
         exit();
     } else {
-        // If authentication fails, displays an error message
-        echo 'Erreur de connexion. Veuillez vérifier vos identifiants.';
+        // Redirects to login page with error message
+        header('Location: connexion.php?error=true');
+        exit();
     }
 }

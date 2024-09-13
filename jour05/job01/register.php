@@ -6,11 +6,11 @@ session_start();
 include('db.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $prenom =$_POST['prenom'];
+    $prenom = $_POST['prenom'];
     $nom = $_POST['nom'];
     $email = $_POST['email'];
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-    
+
     // Check if the email already exists
     $stmt = $pdo->prepare('SELECT * FROM utilisateurs WHERE email = ?');
     $stmt->execute([$email]);
@@ -24,6 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->execute([$nom, $prenom, $email, $password]);
 
     // Redirects user to login page
-    header('Location: connexion.php');
+    header('Location: connexion.php?success=true');
     exit();
 }
