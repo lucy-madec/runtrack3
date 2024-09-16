@@ -1,0 +1,9 @@
+.list-group-item {
+    display: flex;
+    justify-content: left;
+    padding: 0.25rem 0.75rem;
+}
+
+.list-group-item span {
+    margin-left: 10px;
+}
