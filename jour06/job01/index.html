@@ -39,64 +39,77 @@
     <!-- Titre centré avec fond gris clair -->
     <div class="container-fluid bg-light py-5 text-center">
         <h1 class="fw-light">La Plateforme_</h1>
-    </div>
 
-    <!-- Section avec l'article -->
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card" style="width: 100%;">
-                    <img src="papillon.jpeg" class="card-img-top" alt="Image de l'article">
-                    <div class="card-body">
-                        <h5 class="card-title">Un Papillon</h5>
-                        <p class="card-text fs-6">Un papillon c'est un peu comme une chenille, mais avec des ailes. Ne
-                            pas ingérer</p>
-                        <a href="#" class="btn btn-primary">Commander votre propre papillon.</a>
+
+        <!-- Section avec les trois articles côte à côte -->
+        <div class="container py-5">
+            <div class="row">
+                <!-- Premier article -->
+                <div class="col-md-3 me-md-5">
+                    <div class="card" style="width: 100%;">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Image de l'article">
+                        <div class="card-body">
+                            <h5 class="card-title">Titre de l'article</h5>
+                            <p class="card-text">Ceci est le texte descriptif de l'article.</p>
+                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deuxième article (au centre) -->
+                <div class="col-md-6 bg-dark text-light p-4">
+                    <!-- Titre large light -->
+                    <h1 class="fw-light">Grand Titre de l'article</h1>
+                    <!-- Texte sous le titre -->
+                    <p class="mt-3">Ceci est une phrase descriptive en texte normal.</p>
+                    <p>Ceci est une deuxième phrase sous la première.</p>
+                    <!-- Barre horizontale -->
+                    <hr class="w-75 mx-auto">
+                    <!-- Petit texte sous la barre -->
+                    <p class="small">Petit texte supplémentaire sous la barre.</p>
+
+                    <!-- Bouton rouge à gauche -->
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-danger">Bouton Rouge</a>
+                        <!-- Boutons de pagination -->
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination mb-0">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Troisième article (liste verticale) -->
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <!-- Liste de boutons -->
+                        <a href="#" class="list-group-item list-group-item-action btn btn-primary mb-2">Item 1</a>
+                        <a href="#" class="list-group-item list-group-item-action btn btn-primary mb-2">Item 2</a>
+                        <a href="#" class="list-group-item list-group-item-action btn btn-primary mb-2">Item 3</a>
+                        <a href="#" class="list-group-item list-group-item-action btn btn-primary mb-2">Item 4</a>
+                        <a href="#" class="list-group-item list-group-item-action btn btn-primary mb-2">Item 5</a>
+                        <a href="#" class="list-group-item list-group-item-action btn btn-primary mb-2">Item 6</a>
+                        <a href="#" class="list-group-item list-group-item-action btn btn-primary mb-2">Item 7</a>
+                        <a href="#" class="list-group-item list-group-item-action btn btn-primary mb-2">Item 8</a>
+                        <a href="#" class="list-group-item list-group-item-action btn btn-primary mb-2">Item 9</a>
+                        <a href="#" class="list-group-item list-group-item-action btn btn-primary mb-2">Item 10</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Section avec le deuxième article -->
-    <div class="container py-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6 bg-dark text-light p-4">
-                <!-- Titre large light -->
-                <h1 class="fw-light">Grand Titre de l'article</h1>
-                <!-- Texte sous le titre -->
-                <p class="mt-3">Ceci est une phrase descriptive en texte normal.</p>
-                <p>Ceci est une deuxième phrase sous la première.</p>
-                <!-- Barre horizontale -->
-                <hr class="w-75 mx-auto">
-                <!-- Petit texte sous la barre -->
-                <p class="small">Petit texte supplémentaire sous la barre.</p>
-
-                <!-- Bouton rouge à gauche -->
-                <div class="d-flex justify-content-between">
-                    <a href="#" class="btn btn-danger">Bouton Rouge</a>
-                    <!-- Boutons de pagination -->
-                    <nav aria-label="Page navigation">
-                        <ul class="pagination mb-0">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </body>
 
