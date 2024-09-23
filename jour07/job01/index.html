@@ -25,13 +25,26 @@
         </nav>
     </header>
     <main>
+        <!-- Civility -->
         <div class="input-field col s12">
             <select>
-                <option value="" disabled selected>Quel est votre civilité ?</option>
+                <option value="" disabled selected>Votre civilité</option>
                 <option value="1">Monsieur</option>
                 <option value="2">Madame</option>
             </select>
             <label>Civilité</label>
+        </div>
+
+        <!-- Firstname and Last name -->
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name" class="active">Prénom</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name" class="active">Nom de famille</label>
+            </div>
         </div>
     </main>
     <footer class="page-footer">
