@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    background-color: darkgray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.inputForm {
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: darkgray;
+}

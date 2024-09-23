@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materialize</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             <form>
                 <!-- Civility -->
                 <label for="civility">Civilité :</label>
-                <select>
+                <select class="inputForm">
                     <option>Monsieur</option>
                     <option>Madame</option>
                 </select>
@@ -31,15 +32,23 @@
 
                 <!-- First name, last name & address -->
                 <label for="firstname">Prénom :</label>
-                <input type="text" placeholder="Prénom">
+                <input type="text" placeholder="Prénom" class="inputForm">
 
                 <label for="lastname">Nom de famille :</label>
-                <input type="text" placeholder="Nom de famille">
+                <input type="text" placeholder="Nom de famille" class="inputForm">
 
-                <label for="adress">Addresse :</label>
-                <input type="text" placeholder="Addresse">
+                <label for="address">Adresse :</label>
+                <input type="text" placeholder="Adresse" class="inputForm">
+                <br>
 
+                <!-- Email -->
+                <label for="email">Email :</label>
+                <input type="email" placeholder="Email" class="inputForm">
+                <br>
 
+                <!-- Password -->
+                <label for="email">Mot de passe :</label>
+                <input type="password" placeholder="Mot de passe" class="inputForm">
             </form>
         </section>
     </main>
