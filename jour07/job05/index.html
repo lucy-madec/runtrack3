@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec Cartes et Header</title>
+    <!-- Inclusion du CDN Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- CDN inclusion for Materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header with logo and links -->
+    <header>
+        <nav class="blue">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">ABDEUS</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#!">Accueil</a></li>
+                    <li><a href="#!">Services</a></li>
+                    <li><a href="#!">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content with cards -->
+    <main class="container">
+        <h2 class="center-align">Nos Cartes</h2>
+
+        <!-- Row for card layout -->
+        <div class="row">
+            <!-- Card 1 (normal size) -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Image 1">
+                        <span class="card-title">Carte 1</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Ceci est une carte simple avec une image et un contenu descriptif. Elle peut contenir des informations supplémentaires.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 (larger size) -->
+            <div class="col s12 m6 l8">
+                <div class="card large">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/800x400" alt="Image 2">
+                        <span class="card-title">Carte 2</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Cette carte est plus grande et contient plus d'informations. Elle est idéale pour des descriptions plus longues ou des images plus grandes.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Lire la suite</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 (normal size) -->
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Image 3">
+                        <span class="card-title">Carte 3</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Ceci est une autre carte simple avec du contenu qui peut être ajusté selon les besoins de la page.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 (medium size) -->
+            <div class="col s12 m6 l6">
+                <div class="card medium">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/600x350" alt="Image 4">
+                        <span class="card-title">Carte 4</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Cette carte a une taille moyenne, idéale pour un mélange d'images et de texte. Elle est bien équilibrée.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Plus d'infos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
