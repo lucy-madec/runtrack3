@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <!-- Inclusion du CDN Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header with navigation -->
+    <header class="blue">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Mon Site</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html">Inscription</a></li>
+                        <li><a href="index.html">Connexion</a></li>
+                        <li><a href="index.html">Rechercher</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section with registration form -->
+    <section>
+        <h2>Formulaire de création de compte</h2>
+        <form action="#" method="post">
+            <!-- Civility -->
+            <p>Civilité :</p>
+            <label>
+                <input type="radio" name="civilite" value="monsieur" required> Monsieur
+            </label>
+            <label>
+                <input type="radio" name="civilite" value="madame"> Madame
+            </label>
+            <br>
+
+            <!-- First and last name -->
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+            <br>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <br>
+
+            <!-- Address -->
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse">
+            <br>
+
+            <!-- Email -->
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <!-- Password and validation -->
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+
+            <label for="confirm_password">Confirmer le mot de passe :</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <br>
+
+            <!-- Passions -->
+            <p>Passions :</p>
+            <label>
+                <input type="checkbox" name="passions" value="informatique"> Informatique
+            </label>
+            <label>
+                <input type="checkbox" name="passions" value="voyages"> Voyages
+            </label>
+            <label>
+                <input type="checkbox" name="passions" value="sport"> Sport
+            </label>
+            <label>
+                <input type="checkbox" name="passions" value="lecture"> Lecture
+            </label>
+            <br>
+
+            <!-- Validation button -->
+            <button type="submit" class="btn">Valider</button>
+        </form>
+    </section>
+
+    <!-- Footer with links -->
+    <footer class="blue lighten-4">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html">Inscription</a></li>
+                <li><a href="index.html">Connexion</a></li>
+                <li><a href="index.html">Rechercher</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
