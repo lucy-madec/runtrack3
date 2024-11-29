@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950">
+    <!-- Adding the header with the navigation -->
+    <header class="bg-black">
+        <nav class="flex justify-center">
+            <ul class="flex gap-4">
+                <li><a href="index.html" class="text-white hover:text-blue-500">Accueil</a></li>
+                <li><a href="index.html" class="text-white hover:text-blue-500">Inscription</a></li>
+                <li><a href="index.html" class="text-white hover:text-blue-500">Connexion</a></li>
+                <li><a href="index.html" class="text-white hover:text-blue-500">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Adding the main content -->
+    <main>
+        <section>
+            <!-- Adding the form -->
+            <form>
+                <fieldset>
+                    <legend>Genres</legend>
+                    <input type="radio" name="genre" value="man"> Homme
+                    <input type="radio" name="genre" value="woman"> Femme
+                </fieldset>
+                <input type="text" placeholder="Prénom">
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Addresse">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Mot de passe">
+                <input type="password" placeholder="Confirmation mot de passe">
+                <fieldset>
+                    <legend>Passions</legend>
+                    <input type="checkbox" name="passion" value="informatique"> Informatique
+                    <input type="checkbox" name="passion" value="voyage"> Voyage
+                    <input type="checkbox" name="passion" value="sport"> Sport
+                    <input type="checkbox" name="passion" value="lecture"> Lecture
+                </fieldset>
+                <input type="submit" value="Valider">
+            </form>
+        </section>
+    </main>
+
+
+    <!-- Adding the footer with the same list of links -->
+    <footer class="bg-black">
+        <ul class="flex justify-center gap-4">
+            <li><a href="index.html" class="text-white hover:text-blue-500">Accueil</a></li>
+            <li><a href="index.html" class="text-white hover:text-blue-500">Inscription</a></li>
+            <li><a href="index.html" class="text-white hover:text-blue-500">Connexion</a></li>
+            <li><a href="index.html" class="text-white hover:text-blue-500">Rechercher</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
