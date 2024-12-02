@@ -1,0 +1,9 @@
+{
+    "users": [
+        {"id": 1, "email": "john@laplateforme.io", "role": "admin"},
+        {"id": 2, "email": "jane@laplateforme.io", "role": "moderator"}
+    ],
+    "requests": [
+        {"id": 1, "userId": 2, "date": "2024-12-03", "status": "pending"}
+    ]
+}
